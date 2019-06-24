@@ -2,6 +2,8 @@ import { PluginObject } from 'vue/types';
 import { ScrollerSetting } from '@dadajam4/scroller';
 import VueScroller from './components/VueScroller';
 export { default as VueScroller } from './components/VueScroller';
+import { scrollstop } from './directives';
+export * from './directives';
 
 declare module 'vue/types/vue' {
   interface Vue {
@@ -27,6 +29,8 @@ const plugin: PluginObject<VueScrollerOptions> = {
     });
 
     Vue.prototype.$window = $window;
+
+    Vue.directive((scrollstop as any).name, scrollstop);
 
     this.installed = true;
   },
