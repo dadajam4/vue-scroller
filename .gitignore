@@ -28,6 +28,7 @@ package-lock.json
 # build files
 #########################
 dist
+types
 
 #########################
 # test coverage
