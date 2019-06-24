@@ -1,0 +1,62 @@
+{
+  "name": "vue-scroller",
+  "version": "0.0.1",
+  "description": "Service for DOM Element Scroll for Vue2.",
+  "main": "dist/vue-scroller.common.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "nuxt",
+    "docs": "nuxt generate",
+    "build": "npm run docs && plugboy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dadajam4/vue-scroller.git"
+  },
+  "keywords": [
+    "vue",
+    "scroll",
+    "ssr",
+    "TypeScript"
+  ],
+  "author": "dadajam4",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dadajam4/vue-scroller/issues"
+  },
+  "homepage": "https://github.com/dadajam4/vue-scroller#readme",
+  "devDependencies": {
+    "@dadajam4/plugboy": "^0.1.6",
+    "@nuxt/typescript": "^2.8.1",
+    "@vue/babel-preset-app": "^3.8.0",
+    "node-sass": "^4.12.0",
+    "nuxt": "^2.8.1",
+    "nuxt-property-decorator": "^2.3.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-css-only": "^1.0.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-typescript2": "^0.21.2",
+    "rollup-plugin-vue": "^5.0.0",
+    "sass-loader": "^7.1.0",
+    "ts-node": "^8.3.0",
+    "vue-property-decorator": "^8.2.1"
+  },
+  "dependencies": {
+    "@dadajam4/scroller": "^1.1.5",
+    "resize-observer-polyfill": "^1.5.1"
+  },
+  "files": [
+    "dist",
+    "types"
+  ],
+  "module": "dist/vue-scroller.esm.js",
+  "jsdelivr": "dist/vue-scroller.min.js",
+  "unpkg": "dist/vue-scroller.min.js",
+  "sideeffects": false,
+  "types": "types/index.d.ts"
+}
