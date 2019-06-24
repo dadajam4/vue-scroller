@@ -1,5 +1,5 @@
 {
-  "name": "vue-scroller",
+  "name": "@dadajam4/vue-scroller",
   "version": "0.0.1",
   "description": "Service for DOM Element Scroll for Vue2.",
   "main": "dist/vue-scroller.common.js",
